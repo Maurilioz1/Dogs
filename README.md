@@ -1,3 +1,7 @@
+# Dogs
+
+Rede social para cachorros, criada durante o curso de React da Origamid.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
