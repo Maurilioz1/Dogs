@@ -18,9 +18,7 @@ export const UserStorage = ({ children }) => {
     setLogin(false);
 
     window.localStorage.removeItem('dogsToken');
-
-    navigate('/login');
-  }, [navigate]);
+  }, []);
 
   async function getUser(token) {
     const { url, options } = USER_GET(token);
