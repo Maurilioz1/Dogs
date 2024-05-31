@@ -24,7 +24,7 @@ const LoginForm = () => {
   }
 
   return (
-    <section className="animeLeft">
+    <section className="anime-left">
       <Head title="Login" />
 
       <h1 className="title">Login</h1>

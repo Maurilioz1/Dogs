@@ -76,7 +76,7 @@ a {
   z-index: -1;
 }
 
-.animeLeft {
+.anime-left {
   opacity: 0;
   transform: translateX(-20px);
   animation: animeLeft 0.3s forwards;

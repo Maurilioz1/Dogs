@@ -34,7 +34,7 @@ const LoginCreate = () => {
   }
 
   return (
-    <section className="animeLeft">
+    <section className="anime-left">
       <Head title="Crie sua conta" />
 
       <h1 className="title">Cadastre-se</h1>
