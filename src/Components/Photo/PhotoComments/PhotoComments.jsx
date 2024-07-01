@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './PhotoComments.module.css';
-import { UserContext } from '../../../Contexts/UserContext';
+import { UserContext } from '../../../contexts/UserContext';
 import PhotoCommentsForm from '../PhotoCommentsForm/PhotoCommentsForm';
 
 const PhotoComments = (props) => {

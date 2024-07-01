@@ -4,7 +4,7 @@ import LoginForm from './LoginForm/LoginForm';
 import LoginCreate from './LoginCreate/LoginCreate';
 import LoginPasswordLost from './LoginPasswordLost/LoginPasswordLost';
 import LoginPasswordReset from './LoginPasswordReset/LoginPasswordReset';
-import { UserContext } from '../../Contexts/UserContext';
+import { UserContext } from '../../contexts/UserContext';
 import styles from './Login.module.css';
 import NotFound from '../NotFound/NotFound';
 

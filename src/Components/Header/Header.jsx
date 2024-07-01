@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
-import Dogs from '../../Assets/dogs.svg?react';
-import { UserContext } from '../../Contexts/UserContext';
+import Dogs from '../../assets/dogs.svg?react';
+import { UserContext } from '../../contexts/UserContext';
 
 const Header = () => {
   const { data } = React.useContext(UserContext);

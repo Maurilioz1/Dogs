@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
-import { UserContext } from '../../../Contexts/UserContext';
-import Feed from '../../../Assets/feed.svg?react';
-import Stats from '../../../Assets/estatisticas.svg?react';
-import PhotoPost from '../../../Assets/adicionar.svg?react';
-import Logout from '../../../Assets/sair.svg?react';
+import { UserContext } from '../../../contexts/UserContext';
+import Feed from '../../../assets/feed.svg?react';
+import Stats from '../../../assets/estatisticas.svg?react';
+import PhotoPost from '../../../assets/adicionar.svg?react';
+import Logout from '../../../assets/sair.svg?react';
 import styles from './UserHeaderNav.module.css';
-import useMedia from '../../../Hooks/useMedia';
+import useMedia from '../../../hooks/useMedia';
 
 const UserHeaderNav = () => {
   const [mobileMenu, setMobileMenu] = React.useState(false);

@@ -1,6 +1,6 @@
 import React from 'react';
-import Send from '../../../Assets/enviar.svg?react';
-import useFetch from '../../../Hooks/useFetch';
+import Send from '../../../assets/enviar.svg?react';
+import useFetch from '../../../hooks/useFetch';
 import { COMMENT_POST } from '../../../api/api';
 import Error from '../../Helper/Error/Error';
 import styles from './PhotoCommentsForm.module.css';

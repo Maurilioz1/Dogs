@@ -1,9 +1,9 @@
 import React from 'react';
 import Input from '../../Forms/Input/Input';
-import useForm from '../../../Hooks/useForm';
+import useForm from '../../../hooks/useForm';
 import Button from '../../Forms/Button/Button';
 import { PASSWORD_RESET } from '../../../api/api';
-import useFetch from '../../../Hooks/useFetch';
+import useFetch from '../../../hooks/useFetch';
 import Error from '../../Helper/Error/Error';
 import { useNavigate } from 'react-router-dom';
 import Head from '../../Helper/Head/Head';

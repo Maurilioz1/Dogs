@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './PhotoContent.module.css';
 import { Link } from 'react-router-dom';
 import PhotoComments from '../PhotoComments/PhotoComments';
-import { UserContext } from '../../../Contexts/UserContext';
+import { UserContext } from '../../../contexts/UserContext';
 import PhotoDelete from '../PhotoDelete/PhotoDelete';
 import Image from '../../Helper/Image/Image';
 
