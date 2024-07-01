@@ -1,8 +1,7 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import photo from './photo';
 
-const counter = () => 0;
-
-const reducer = combineReducers({ counter });
+const reducer = combineReducers({ photo });
 
 const store = configureStore({
   reducer,
