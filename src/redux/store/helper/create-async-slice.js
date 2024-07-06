@@ -36,6 +36,11 @@ const createAsyncSlice = (config) => {
       updateTime(state, action) {
         state.lastUpdate = action.payload;
       },
+      resetState(state) {
+        state.loading = false;
+        state.data = null;
+        state.error = null;
+      },
       ...config.reducers,
     },
   });
@@ -64,7 +69,7 @@ const createAsyncSlice = (config) => {
 
       return dispatch(fetchSuccess(data));
     } catch (error) {
-      dispatch(fetchError(error.message));
+      return dispatch(fetchError(error.message));
     }
   };
 

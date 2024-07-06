@@ -5,8 +5,6 @@ import { useSelector } from 'react-redux';
 const ProtectedRoute = ({ children }) => {
   const { data } = useSelector((state) => state.user);
 
-  console.log(data);
-
   if (data) {
     return children;
   } else if (data === null) {

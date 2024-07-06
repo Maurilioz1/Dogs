@@ -1,30 +1,25 @@
 import React from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
-import { UserContext } from '../../../contexts/UserContext';
 import Feed from '../../../assets/feed.svg?react';
 import Stats from '../../../assets/estatisticas.svg?react';
 import PhotoPost from '../../../assets/adicionar.svg?react';
 import Logout from '../../../assets/sair.svg?react';
 import styles from './UserHeaderNav.module.css';
 import useMedia from '../../../hooks/useMedia';
+import { useDispatch } from 'react-redux';
+import { userLogout } from '../../../redux/store/user';
 
 const UserHeaderNav = () => {
   const [mobileMenu, setMobileMenu] = React.useState(false);
 
-  const { userLogout } = React.useContext(UserContext);
-  const navigate = useNavigate();
   const mobile = useMedia('(max-width: 40rem)');
   const { pathname } = useLocation();
+
+  const dispatch = useDispatch();
 
   React.useEffect(() => {
     setMobileMenu(false);
   }, [pathname]);
-
-  function handleLogout() {
-    userLogout();
-
-    navigate('/login');
-  }
 
   return (
     <>
@@ -54,7 +49,7 @@ const UserHeaderNav = () => {
           {mobile && 'Adicionar foto'}
         </NavLink>
 
-        <button onClick={handleLogout}>
+        <button onClick={() => dispatch(userLogout())}>
           <Logout />
           {mobile && 'Sair'}
         </button>
