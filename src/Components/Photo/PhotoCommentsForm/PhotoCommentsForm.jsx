@@ -14,6 +14,7 @@ const PhotoCommentsForm = ({ id, setComments, single }) => {
     event.preventDefault();
 
     const { url, options } = COMMENT_POST(id, { comment });
+
     const { response, json } = await request(url, options);
 
     if (response.ok) {

@@ -50,7 +50,7 @@ export function USER_POST(body) {
   };
 }
 
-export function PHOTO_POST(formData, token) {
+export function PHOTO_POST({ formData, token }) {
   return {
     url: `${API_URL}/api/photo`,
     options: {
@@ -90,7 +90,7 @@ export function COMMENT_POST(id, body) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${window.localStorage.getItem('dogsToken')}`,
+        Authorization: `Bearer ${window.localStorage.getItem('token')}`,
       },
       body: JSON.stringify(body),
     },
@@ -103,7 +103,7 @@ export function PHOTO_DELETE(id) {
     options: {
       method: 'DELETE',
       headers: {
-        Authorization: `Bearer ${window.localStorage.getItem('dogsToken')}`,
+        Authorization: `Bearer ${window.localStorage.getItem('token')}`,
       },
     },
   };
@@ -141,7 +141,7 @@ export function STATS_GET() {
     options: {
       method: 'GET',
       headers: {
-        Authorization: `Bearer ${window.localStorage.getItem('dogsToken')}`,
+        Authorization: `Bearer ${window.localStorage.getItem('token')}`,
       },
     },
   };
